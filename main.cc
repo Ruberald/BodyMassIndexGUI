@@ -17,8 +17,8 @@ int main()
 	std::cin >> height;
 
 	Result result = calculateBMI(weight, height);
-	std::cout << "Your BMI is " << result.first << endl;
-	std::cout << "Result: " << result.second << endl;
+	std::cout << "Your BMI is " << result.first << std::endl;
+	std::cout << "Result: " << result.second << std::endl;
 }
 
 Result calculateBMI(float weight, float height)
