@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 #include <utility>
+#include "Calculation.h"
 
 typedef std::pair<float, std::string> Result;
 
-Result calculateBMI(float weight, float height);
+extern Result calculateBMI(float weight, float height);
 
 int main()
 {
@@ -19,11 +20,4 @@ int main()
 	Result result = calculateBMI(weight, height);
 	std::cout << "Your BMI is " << result.first << std::endl;
 	std::cout << "Result: " << result.second << std::endl;
-}
-
-Result calculateBMI(float weight, float height)
-{
-	std::string Second = "";
-
-	return make_pair((weight/(height*height)), Second);
 }
