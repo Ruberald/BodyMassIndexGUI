@@ -19,7 +19,6 @@ std::string calculateState(float bmi)
 	{
 		if (bmi >= types_ptr[i].range.first && bmi < types_ptr[i].range.second)
 		{
-			// std::cout << i;
 			return types_ptr[i].description;
 		}
 	}
