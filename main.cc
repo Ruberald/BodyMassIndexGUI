@@ -21,10 +21,3 @@ int main()
 	std::cout << "Your BMI is " << result.first << std::endl;
 	std::cout << "Result: " << result.second << std::endl;
 }
-
-// Result calculateBMI(float weight, float height)
-// {
-// 	std::string Second = "";
-
-// 	return make_pair((weight/(height*height)), Second);
-// }
